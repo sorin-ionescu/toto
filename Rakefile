@@ -1,8 +1,9 @@
-require 'rubygems'
+require 'rubygems' unless defined? Gem
 require 'rake'
+require 'bundler/setup'
+Bundler.require(:default, :test)
 
 begin
-  require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "toto"
     gem.summary = %Q{the tiniest blog-engine in Oz}
@@ -31,5 +32,4 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-task :test => :check_dependencies
 task :default => :test

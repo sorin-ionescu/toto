@@ -3,3 +3,9 @@
 coverage
 rdoc
 pkg
+.bundle
+vendor/bundle
+vendor/cache
+.bundle
+vendor/bundle
+vendor/cache
